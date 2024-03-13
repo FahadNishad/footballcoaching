@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.id1 {
+  outline: none;
+  color: blue;
+}
