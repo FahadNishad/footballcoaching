@@ -8,6 +8,7 @@ const Teacher = () => {
       justifyContent={"center"}
       alignItems={"center"}
       margin={"mt-[6rem]"}
+      width={'85%'}
     >
       <div
         className="w-full h-[630px] bg-cover bg-center"

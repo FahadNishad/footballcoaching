@@ -10,6 +10,7 @@ const Coaches = () => {
       direction={"col"}
       gap={"3rem"}
       margin={"mt-[6rem]"}
+      width={'85%'}
     >
       <p className="text-main-dark text-secondheading uppercase">Best Choice</p>
       <h1 className="text-mianheading">Our Best Football Coaches </h1>

@@ -20,6 +20,7 @@ export const Services = () => {
       justifyContent={"center"}
       alignItems={"center"}
       margin={"mt-[6rem]"}
+      width={'85%'}
     >
       <div className="w-full flex items-center justify-center gap-3 md:flex-row flex-col">
         <img src={serviceimg} alt="ourservcies" className="sm:w-[50%] h-[532px] w-full" />
