@@ -18,7 +18,6 @@ const SubNavbar = () => {
       <div>
         <Link to={"/"}>
           <Logo />
-          
         </Link>
       </div>
 
@@ -26,7 +25,7 @@ const SubNavbar = () => {
         <Link to="/session" className="text-[16px] flex gap-2 items-center">
           Sessions <BiSolidDownArrow className="text-[10px]" />{" "}
         </Link>
-        <Link className="text-[16px] flex gap-2 items-center">
+        <Link to='/verification' className="text-[16px] flex gap-2 items-center">
           Resouces <BiSolidDownArrow className="text-[10px]" />
         </Link>
         <Link className="text-[16px] ">Blogs </Link>
@@ -35,6 +34,7 @@ const SubNavbar = () => {
         </Link>
 
         <Link
+          to="/register"
           className="bg-main-dark px-4 py-2
          rounded text-[16px] text-white"
         >

@@ -1,20 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import cta from "../../assets/png/CTA.png";
 import { HiArrowLeft } from "react-icons/hi2";
 import { IoEyeOffOutline } from "react-icons/io5";
+import { RiArrowDownSFill } from "react-icons/ri";
 
 const RegistrationPage = () => {
+  const [icon, setIcon] = useState(false);
+  const [selectedOption, setSelectedOption] = useState("Coach");
+  const handleIconDrop = () => {
+    if (icon === false) {
+      setIcon(true);
+    } else {
+      setIcon(false);
+    }
+  };
+  const handleOptionSelect = (option) => {
+    setSelectedOption(option);
+    setIcon(false);
+  };
   return (
     <div className="w-full">
       <div className="md:w-[85%] w-[90%] mx-auto">
         <div>
-          <div className="flex items-center justify-between w-[5%] pt-3 ">
-            <HiArrowLeft />
+          <div className="flex items-center gap-2 justify-between w-[5%] pt-3 ">
+            <span>
+              <HiArrowLeft />
+            </span>
             <span>Register</span>
           </div>
         </div>
-        <div className="flex py-[140px]">
+        <div className="flex py-[80px]">
           <div className="w-5.5/12">
             <img src={cta} width={589} height={550} alt="cta coaching" />
           </div>
@@ -37,16 +53,29 @@ const RegistrationPage = () => {
             </p>
             <div className="flex flex-col py-1">
               <label htmlFor="password" className="py-1">
-                Register As
+                Register As<span style={{ color: "red" }}>*</span>
               </label>
-              <select className="rounded-3xl border border-[#59bec5] py-2 px-4">
-                <option value="Coach">Coach</option>
-                <option value="Player">Player</option>
-              </select>
+              <div className="relative w-full">
+                <h4
+                  onClick={handleIconDrop}
+                  className="rounded-3xl flex justify-between items-center w-full border id1 border-[#59bec5] py-1 px-4"
+                >
+                  Register as {selectedOption}
+                  <span>
+                    <RiArrowDownSFill fontSize="34px" color="gray" />
+                  </span>
+                </h4>
+                {icon && (
+                  <div className="absolute z-50 bg-white border gap-1 rounded-2xl px-5 mt-1 border-gray-500 w-full">
+                    <h5 onClick={() => handleOptionSelect("Player")}>Player</h5>
+                    <h5 onClick={() => handleOptionSelect("Coach")}>Coach</h5>
+                  </div>
+                )}
+              </div>
             </div>
             <div className="flex flex-col  w-12/12 py-[2px]">
               <label htmlFor="name" className="py-1">
-                Email Address
+                Email Address<span style={{ color: "red" }}>*</span>
               </label>
               <input
                 className="rounded-3xl px-5 border border-[#59bec5]  py-2 w-full "
@@ -57,7 +86,7 @@ const RegistrationPage = () => {
             </div>
             <div className="flex flex-col py-[2px] ">
               <label htmlFor="name" className="py-1">
-                User name
+                User name<span style={{ color: "red" }}>*</span>
               </label>
               <input
                 className="rounded-3xl border border-[#59bec5] px-5 py-2 w-full"
@@ -68,7 +97,7 @@ const RegistrationPage = () => {
             </div>
             <div className="flex flex-col py-[2px]">
               <label htmlFor="name" className="py-1">
-                Password
+                Password<span style={{ color: "red" }}>*</span>
               </label>
               <div className="flex items-center border border-[#59bec5] rounded-3xl px-2">
                 <input
@@ -82,7 +111,7 @@ const RegistrationPage = () => {
             </div>
             <div className="flex flex-col py-[2px]">
               <label htmlFor="name" className="py-1">
-                Conform Password
+                Conform Password<span style={{ color: "red" }}>*</span>
               </label>
               <div className="flex items-center border border-[#59bec5] rounded-3xl px-2">
                 <input

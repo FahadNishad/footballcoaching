@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.id1 {
-  outline: none;
-  color: blue;
-}
+/* .id1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+} */
