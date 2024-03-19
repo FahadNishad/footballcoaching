@@ -9,12 +9,12 @@ const Login = () => {
     <div className="w-full">
       <div className="md:w-[85%] w-[90%] mx-auto">
         <div>
-          <div className="flex items-center justify-between w-[5%] pt-3 ">
+          <div className="flex items-center gap-2 w-[5%] pt-3 ">
             <HiArrowLeft />
             <span>Login</span>
           </div>
         </div>
-        <div className="flex py-[140px]">
+        <div className="flex py-[80px]">
           <div className="">
             <img src={cta} width={589} height={550} alt="cta coaching" />
           </div>
