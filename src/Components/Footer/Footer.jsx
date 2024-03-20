@@ -43,7 +43,7 @@ const Footer = () => {
             </p>
           </div>
           <div>
-            <h1 className="text-[#49BBBD] text-[25px] py-4 md:py-0 font-sans	 md:pb-[30px] ">
+            <h1 className="text-[#49BBBD] text-[25px] py-4 md:py-0 font-sans w-[137px] text-center	 md:pb-[30px] ">
               Useful Links
             </h1>
             <div className="flex flex-col font-sans	 text-[18px] gap-[15px] font-regular md:items-center">

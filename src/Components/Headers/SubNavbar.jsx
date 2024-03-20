@@ -25,7 +25,7 @@ const SubNavbar = () => {
         <Link to="/session" className="text-[16px] flex gap-2 items-center">
           Sessions <BiSolidDownArrow className="text-[10px]" />{" "}
         </Link>
-        <Link to='/verification' className="text-[16px] flex gap-2 items-center">
+        <Link className="text-[16px] flex gap-2 items-center">
           Resouces <BiSolidDownArrow className="text-[10px]" />
         </Link>
         <Link className="text-[16px] ">Blogs </Link>

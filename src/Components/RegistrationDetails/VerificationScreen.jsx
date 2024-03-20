@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { HiArrowLeft } from "react-icons/hi2";
 import cta from "../../assets/png/CTA.png";
 import { useRef } from "react";
@@ -6,6 +6,11 @@ import { useRef } from "react";
 const VerificationScreen = () => {
   const inputRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
   const [verificationCode, setVerificationCode] = useState("");
+
+  useEffect(() => {
+    // Set focus on the first input field when the component mounts
+    inputRefs[0].current.focus();
+  }, []); // Empty dependency array to run only once when the component mounts
 
   const handleInputChange = (index, value) => {
     if (value === "") return; // Don't update state if input is empty
@@ -22,15 +27,21 @@ const VerificationScreen = () => {
   };
 
   const handleBackspace = (index, e) => {
-    if (
-      e.key === "Backspace" &&
-      index > 0 &&
-      inputRefs[index].current.value === ""
-    ) {
+    if (e.key === "Backspace" && index > 0 && e.target.value === "") {
       // Move focus to the previous input if backspace is pressed on an empty input
       inputRefs[index - 1].current.focus();
-    }
+    } else if (e.key === "Backspace" && index === 0 && e.target.value === "") {
+      // Prevent default behavior to avoid navigation when backspace is pressed in the first input field when it's empty
+      e.preventDefault();
+    } else if (e.key === "Backspace" && e.target.value !== "") {
+      // Clear the current input field content if backspace is pressed and it's not empty
+      const newVerificationCode = [...verificationCode];
+      newVerificationCode[index] = "";
+      setVerificationCode(newVerificationCode.join(""));
+    } 
   };
+  
+  
 
   return (
     <div className="w-full">
@@ -47,13 +58,15 @@ const VerificationScreen = () => {
           <div className="">
             <img src={cta} width={589} height={550} alt="cta coaching" />
           </div>
-          <div className="px-20 py-48 gap-3 flex flex-col ">
-            <h1 className="text-center text-[32px]">Verification code</h1>
+          <div className="px-20 py-48 gap-2 flex flex-col ">
+            <h1 className="text-center text-[32px] font-bold">
+              Verification code
+            </h1>
             <p className="flex justify-center text-center text-[#535763] text-[14px]">
               We just sent you a verification code. Check your <br /> inbox to
               get it.
             </p>
-            <div className="flex w-full justify-between ">
+            <div className="flex w-full pt-3 justify-between ">
               {[0, 1, 2, 3].map((index) => (
                 <input
                   type="text"
@@ -69,12 +82,17 @@ const VerificationScreen = () => {
                     height: "45px",
                     marginRight: "10px",
                     textAlign: "center",
+                    caretColor: "blue",
+                    outline: "none",
                   }}
-                  className="bg-[#EFEFEF] rounded "
+                  className="bg-[#EFEFEF] rounded verification-input "
                 />
               ))}
             </div>
-            <button className="bg-[#efefef] px-[105px] font-semibold py-2 rounded-xl">
+            <p className="text-center">
+              Re-send code in <span className="text-[#6759ff]">0:20</span>{" "}
+            </p>
+            <button className="bg-[#efefef] hover:bg-gray-300 px-[105px] text-[15px] font-semibold py-2 rounded-xl">
               Continue
             </button>
           </div>

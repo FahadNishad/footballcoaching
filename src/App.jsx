@@ -8,6 +8,9 @@ import Register from "./pages/Auth/Register/Register";
 import Session from "./pages/Session/Sessions";
 import SessionPage from "./pages/Session/SessionsPage";
 import VerificationScreen from "./Components/RegistrationDetails/VerificationScreen";
+import Select from "./pages/Auth/forgetpassword/Select";
+import Verify from "./pages/Auth/forgetpassword/Verify";
+import NewPassword from "./pages/Auth/forgetpassword/NewPassword";
 
 const App = () => {
   return (
@@ -21,6 +24,9 @@ const App = () => {
         <Route path="/verification" element={<VerificationScreen />} />
         <Route path="/session" element={<Session />} />
         <Route path="/session/:sessionId" element={<SessionPage />} />
+        <Route path="/select" element={<Select/>} />
+        <Route path="/verify" element={<Verify/>}  />
+        <Route path="/newpassword" element={<NewPassword/>}  />
       </Routes>
       <Footer />
     </BrowserRouter>
