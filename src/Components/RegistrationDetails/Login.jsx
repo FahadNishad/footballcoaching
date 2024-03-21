@@ -4,7 +4,6 @@ import { HiArrowLeft } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import { IoEyeOffOutline } from "react-icons/io5";
 const Login = () => {
- 
   return (
     <div className="w-full">
       <div className="md:w-[85%] w-[90%] mx-auto">
@@ -14,28 +13,29 @@ const Login = () => {
             <span>Login</span>
           </div>
         </div>
-        <div className="flex py-[80px]">
-          <div className="">
-            <img src={cta} width={589} height={550} alt="cta coaching" />
+        <div className="flex justify-between py-[80px]">
+          <div className=" w-6/12">
+            <img src={cta} width={589} height={550} alt="cta-
+            coaching" />
           </div>
-          <div className="px-20 py-24">
-            <h1 className="text-center">Welcome to Lorem</h1>
+          <div className=" w-5/12 my-auto">
+            <h1 className="text-center">Welcome to Yugoiate</h1>
             <div className="flex justify-center py-3">
-              <div className="border border-[#59bec5]  rounded-3xl flex justify-between w-10/12  ">
+              <div className="border border-[#59bec5] sm:w-[90%] md:w-[80%] lg:w-[60%] xl:w-[60%] rounded-3xl flex justify-between ">
                 <Link to="/registration">
-                  <button className="hover:bg-[#59bec5] hover:text-white py-3 px-12 rounded-3xl">
+                  <button className="hover:bg-[#59bec5] hover:text-white py-3 sm:px-6 lg:px-8 xl:px-10 rounded-3xl">
                     Login
                   </button>
                 </Link>
                 <Link to="/register">
-                  <button className="hover:bg-[#59bec5] hover:text-white py-3 px-12 rounded-3xl">
+                  <button className="hover:bg-[#59bec5] hover:text-white py-3 sm:px-6 lg:px-8 xl:px-12 rounded-3xl">
                     Register
                   </button>
                 </Link>
               </div>
             </div>
 
-            <div className="flex flex-col pb-7">
+            <div className="flex flex-col w-[90%] mx-auto pb-7">
               <label htmlFor="name" className="py-1">
                 User name
               </label>
@@ -46,7 +46,7 @@ const Login = () => {
                 required
               />
             </div>
-            <div className="flex flex-col pb-5">
+            <div className="flex flex-col w-[90%] mx-auto pb-5">
               <label htmlFor="password" className="py-1">
                 Password
               </label>
@@ -60,7 +60,7 @@ const Login = () => {
                 <IoEyeOffOutline />
               </div>
             </div>
-            <div className="flex justify-between ">
+            <div className="flex w-[90%] mx-auto justify-between ">
               <div className="flex gap-1  items-center">
                 <input type="checkbox" />
                 <label htmlFor="remember me" className="text-[12px]">
@@ -68,11 +68,13 @@ const Login = () => {
                 </label>
               </div>
               <div>
-                <Link className="text-[12px]" to='/select' >Forgot Password ? </Link>
+                <Link className="text-[12px]" to="/select">
+                  Forgot Password ?{" "}
+                </Link>
               </div>
             </div>
             <div className="text-center pt-10">
-              <button className="border rounded-3xl py-2 px-[170px] text-white bg-[#59bec5] ">
+              <button className="border rounded-3xl py-2 w-[90%] mx-auto text-white bg-[#59bec5] ">
                 Login
               </button>
             </div>
