@@ -15,7 +15,8 @@ const Login = () => {
         </div>
         <div className="flex justify-between py-[80px]">
           <div className=" w-6/12">
-            <img src={cta} width={589} height={550} alt="cta coaching" />
+            <img src={cta} width={589} height={550} alt="cta-
+            coaching" />
           </div>
           <div className=" w-5/12 my-auto">
             <h1 className="text-center">Welcome to Yugoiate</h1>
