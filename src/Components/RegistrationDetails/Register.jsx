@@ -30,20 +30,20 @@ const RegistrationPage = () => {
             <span>Register</span>
           </div>
         </div>
-        <div className="flex py-[80px]">
+        <div className="flex justify-between py-[80px]">
           <div className="w-5.5/12">
             <img src={cta} width={589} height={550} alt="cta coaching" />
           </div>
-          <div className="px-20  w-6/12 ">
+          <div className="w-6/12 ">
             <h1 className="text-center pt-3 ">Registration form</h1>
             <div className="flex justify-center py-3">
-              <div className="border border-[#59bec5]  rounded-3xl flex justify-between w-9/12  ">
+              <div className="border border-[#59bec5]  rounded-3xl flex justify-between md:w-[60%] lg:[80%] xl-[70%] mx-auto  ">
                 <Link to="/registration">
-                  <button className="hover:bg-[#59bec5] hover:text-white py-3 px-12 rounded-3xl">
+                  <button className="hover:bg-[#59bec5] hover:text-white py-3 sm:px-6 lg:px-8 xl:px-12 rounded-3xl">
                     Login
                   </button>
                 </Link>
-                <button className="hover:bg-[#59bec5] hover:text-white py-3 px-12 rounded-3xl">
+                <button className="hover:bg-[#59bec5] hover:text-white py-3 sm:px-6 lg:px-8 xl:px-12 rounded-3xl">
                   Register
                 </button>
               </div>
@@ -51,14 +51,14 @@ const RegistrationPage = () => {
             <p className="py-2 text-center opacity-65 ">
               Provide the all required information below
             </p>
-            <div className="flex flex-col py-1">
+            <div className="flex flex-col w-10/12 mx-auto py-1">
               <label htmlFor="password" className="py-1">
                 Register As<span style={{ color: "red" }}>*</span>
               </label>
               <div className="relative w-full">
                 <h4
                   onClick={handleIconDrop}
-                  className="rounded-3xl flex justify-between items-center w-full border id1 border-[#59bec5] py-1 px-4"
+                  className="rounded-3xl flex justify-between items-center w-full border id1 border-[#59bec5] py-[3px] px-4"
                 >
                   Register as {selectedOption}
                   <span>
@@ -73,7 +73,7 @@ const RegistrationPage = () => {
                 )}
               </div>
             </div>
-            <div className="flex flex-col  w-12/12 py-[2px]">
+            <div className="flex flex-col  w-10/12 mx-auto py-[2px]">
               <label htmlFor="name" className="py-1">
                 Email Address<span style={{ color: "red" }}>*</span>
               </label>
@@ -84,7 +84,7 @@ const RegistrationPage = () => {
                 required
               />
             </div>
-            <div className="flex flex-col py-[2px] ">
+            <div className="flex flex-col w-10/12 mx-auto py-[2px] ">
               <label htmlFor="name" className="py-1">
                 User name<span style={{ color: "red" }}>*</span>
               </label>
@@ -95,7 +95,7 @@ const RegistrationPage = () => {
                 required
               />
             </div>
-            <div className="flex flex-col py-[2px]">
+            <div className="flex flex-col w-10/12 mx-auto py-[2px]">
               <label htmlFor="name" className="py-1">
                 Password<span style={{ color: "red" }}>*</span>
               </label>
@@ -109,7 +109,7 @@ const RegistrationPage = () => {
                 <IoEyeOffOutline />
               </div>
             </div>
-            <div className="flex flex-col py-[2px]">
+            <div className="flex flex-col w-10/12 mx-auto py-[2px]">
               <label htmlFor="name" className="py-1">
                 Conform Password<span style={{ color: "red" }}>*</span>
               </label>
@@ -124,7 +124,7 @@ const RegistrationPage = () => {
               </div>
             </div>
             <div className="text-center pt-2">
-              <button className="border rounded-3xl py-2 px-[170px] text-white bg-[#59bec5] ">
+              <button className="border rounded-3xl py-2 w-[84%] text-white bg-[#59bec5] ">
                 Login
               </button>
             </div>
