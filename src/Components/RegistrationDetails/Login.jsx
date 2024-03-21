@@ -3,8 +3,8 @@ import cta from "../../assets/png/CTA.png";
 import { HiArrowLeft } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import { IoEyeOffOutline } from "react-icons/io5";
-
 const Login = () => {
+ 
   return (
     <div className="w-full">
       <div className="md:w-[85%] w-[90%] mx-auto">
@@ -68,7 +68,7 @@ const Login = () => {
                 </label>
               </div>
               <div>
-                <button className="text-[12px]">Forgot Password ? </button>
+                <Link className="text-[12px]" to='/select' >Forgot Password ? </Link>
               </div>
             </div>
             <div className="text-center pt-10">

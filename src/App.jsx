@@ -7,10 +7,6 @@ import Footer from "./Components/Footer/Footer";
 import Register from "./pages/Auth/Register/Register";
 import Session from "./pages/Session/Sessions";
 import SessionPage from "./pages/Session/SessionsPage";
-import VerificationScreen from "./Components/RegistrationDetails/VerificationScreen";
-import CoachDetail from "./pages/Session/CoachDetail";
-import NewPassword from "./pages/Auth/forgetpassword/NewPassword";
-import Blogs from "./pages/Blogs/Blogs";
 
 const App = () => {
   return (
@@ -23,9 +19,7 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/verification" element={<VerificationScreen />} />
         <Route path="/session" element={<Session />} />
-        <Route path="/session/:sessionId" element={<SessionPage />} />
-        <Route path="/coachdetail/:coachId" element={<CoachDetail />} />
-        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/session/:sessionId" element={<SessionPage/>}/>
       </Routes>
       <Footer />
     </BrowserRouter>

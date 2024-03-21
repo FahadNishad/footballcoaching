@@ -33,7 +33,7 @@ const icons = [
 const Footer = () => {
   return (
     <>
-      <div className="bg-[#D9D9D9] mt-4">
+      <div className="bg-[#D9D9D9] mt-[6rem]">
         <div className=" flex flex-col  md:flex-row md:gap-[290px] pt-[60px] mx-auto w-[85%] ">
           <div className="">
             <img src={prelogo} alt="logo" />
@@ -43,7 +43,7 @@ const Footer = () => {
             </p>
           </div>
           <div>
-            <h1 className="text-[#49BBBD] text-[25px] py-4 md:py-0 font-sans	 md:pb-[30px] ">
+            <h1 className="text-[#49BBBD] text-[25px] py-4 md:py-0 font-sans w-[137px] text-center	 md:pb-[30px] ">
               Useful Links
             </h1>
             <div className="flex flex-col font-sans	 text-[18px] gap-[15px] font-regular md:items-center">
