@@ -13,7 +13,7 @@ const SessionHead = () => {
           alt="session_header"
         />
       </div>
-      <div className="w-[95%] mx-auto gap-4 flex flex-wrap justify-between ">
+      <div className="w-[95%] pb-16 mx-auto gap-4 flex flex-wrap justify-between ">
         {Session_Data.map((data, index) => (
           <div
             key={index}
@@ -22,7 +22,6 @@ const SessionHead = () => {
             <Link
               to={`/session/${index}`}
               key={index}
-              // className="w-[24%] flex flex-col px-6 py-6 gap-4 border-2 border-red-900  rounded-2xl "
               className="px-6 py-6 flex flex-col rounded-2xl "
               style={{
                 boxShadow: "0 0 10px rgba(0, 0, 0, 0.3)",
@@ -38,10 +37,10 @@ const SessionHead = () => {
               <h1 className="text-[#666666] text-[24px] px-3 font-semibold">
                 {data.heading}
               </h1>
-              <p className="px-3 text-[#7D8FA9] text-[14px] pt-3 ">
+              <p className="px-3 text-[#7D8FA9] text-[14px] pt-3 pb-5 ">
                 {data.paragraph}
               </p>
-              <button className="text-[#565656] px-3 pt-5 text-left ">
+              <button className="text-[#565656] px-3  text-left ">
                 {data.buttonText}
               </button>
             </Link>

@@ -2,8 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .id1 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-} */
+
+
+.input-id{
+  outline: none;
+  border: none;
+}
+.verification-input:focus {
+  background-color: #ffffff; 
+  border: 1px solid gray;
+  /* outline: 1px solid red; */
+}
+/* In your CSS file */
+.shadow-custom {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+}
+
