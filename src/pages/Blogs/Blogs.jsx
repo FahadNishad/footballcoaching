@@ -46,7 +46,7 @@ const Blogs = () => {
             </p>
             <p className="text-[13px] text-[#999999] leading-1">
               Pellentesque eu nibh eget mauris congue mattis mattis nec tellus.
-              Phasellus imperdiet elit eu magna.
+              Phasellus imperdiet elit eu magna
             </p>
           </div>
           {/* left side  */}
