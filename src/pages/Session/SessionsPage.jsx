@@ -1,6 +1,6 @@
 import React from "react";
-import { AiOutlineSearch } from "react-icons/ai"; // Importing the search icon from React Icons
-import sessionhead from "../../assets/png/Frame 758.png"; // Assuming this is the correct path to your image
+import { AiOutlineSearch } from "react-icons/ai"; 
+import sessionhead from "../../assets/png/Frame 758.png"; 
 import SectionWrapper from "../../Components/Wrapper/SectionWrapper";
 import SessionCard from "../../Components/Sessions/Cards/sessionCard";
 import { sessionCardData } from "../../data/sessionCard";
