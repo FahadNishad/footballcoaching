@@ -29,7 +29,12 @@ const SubNavbar = () => {
         <Link to='/verification' className="text-[16px] flex gap-2 items-center">
           Resouces <BiSolidDownArrow className="text-[10px]" />
         </Link>
-        <Link className="text-[16px] ">Blogs </Link>
+        <Link to='/blogs' className="text-[16px] flex gap-2 items-center">
+          Blogs 
+        </Link>
+        <Link to='/verification' className="text-[16px] flex gap-2 items-center">
+          Events 
+        </Link>
         <Link to="/registration" className="text-[16px]">
           Login{" "}
         </Link>
