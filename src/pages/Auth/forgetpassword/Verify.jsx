@@ -56,10 +56,10 @@ const Verify = () => {
           </div>
         </div>
         <div className="flex py-[80px]">
-          <div className="">
+          <div className="w-[50%]">
             <img src={cta} width={589} height={550} alt="cta coaching" />
           </div>
-          <div className="px-20 py-48 gap-2 flex flex-col ">
+          <div className="px-20 md:py-20 xl:py-48 gap-2 flex flex-col ">
             <h1 className="text-center text-[32px] font-bold">
               Verification code
             </h1>
