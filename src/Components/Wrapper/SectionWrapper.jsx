@@ -25,7 +25,7 @@ const SectionWrapper = ({
 
   return (
     <div
-      className={`w-full flex justify-center items-center  ${color} ${shadow} ${classNames} ${margin}`}
+      className={`w-full py-3.5 flex justify-center items-center  ${color} ${shadow} ${classNames} ${margin}`}
       style={{ height }}
     >
       <div

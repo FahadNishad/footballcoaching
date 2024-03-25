@@ -1,4 +1,3 @@
-
 // import React from "react";
 import Logo from "../Logo/Logo";
 import { Link } from "react-router-dom";
@@ -7,12 +6,10 @@ import { MdMenuOpen } from "react-icons/md";
 import SectionWrapper from "../Wrapper/SectionWrapper";
 const SubNavbar = () => {
   const shadow = "shadow-lg";
-  const height = "91px";
   const border = "border border-blue-800";
   return (
     <SectionWrapper
       shadow={shadow}
-      height={height}
       justifyContent={"between"}
       alignItems={"center"}
     >
@@ -26,7 +23,7 @@ const SubNavbar = () => {
         <Link to="/session" className="text-[16px] flex gap-2 items-center">
           Sessions <BiSolidDownArrow className="text-[10px]" />{" "}
         </Link>
-        <Link to='/verification' className="text-[16px] flex gap-2 items-center">
+        <Link className="text-[16px] flex gap-2 items-center">
           Resouces <BiSolidDownArrow className="text-[10px]" />
         </Link>
         <Link to='/blogs' className="text-[16px] flex gap-2 items-center">
