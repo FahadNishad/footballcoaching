@@ -29,7 +29,7 @@ const SubNavbar = () => {
         <Link to='/blogs' className="text-[16px] flex gap-2 items-center">
           Blogs 
         </Link>
-        <Link to='/verification' className="text-[16px] flex gap-2 items-center">
+        <Link  className="text-[16px] flex gap-2 items-center">
           Events 
         </Link>
         <Link to="/registration" className="text-[16px]">
