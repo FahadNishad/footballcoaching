@@ -17,7 +17,7 @@ const Banner = () => {
         muted
         className="absolute z-0 w-auto min-w-full min-h-full max-w-none"
       >
-        <source src="https://player.vimeo.com/external/347925811.sd.mp4?s=e48915e5abacccf4471e3daf61611fd8af52ca87&profile_id=164&oauth2_token_id=57447761" />
+        <source src="https://player.vimeo.com/progressive_redirect/playback/602463559/rendition/360p/file.mp4?loc=external&oauth2_token_id=1747418641&signature=de18ad7214b9212007c3d5bd2ed1cf5f343154c834161d8b51131b285096fe16" />
         Your browser does not support the video tag.
       </video>
 

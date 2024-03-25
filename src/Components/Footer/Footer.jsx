@@ -34,7 +34,7 @@ const Footer = () => {
   return (
     <>
       <div className="bg-[#D9D9D9]">
-        <div className=" flex flex-col  md:flex-row md:gap-[290px] pt-[60px] mx-auto w-[85%] ">
+        <div className=" flex flex-col  md:flex-row justify-between pt-[60px] mx-auto w-[85%] ">
           <div className="">
             <img src={prelogo} alt="logo" />
             <p className="pt-[30px] font-sans	">

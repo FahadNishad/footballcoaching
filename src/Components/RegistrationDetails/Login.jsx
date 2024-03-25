@@ -8,20 +8,27 @@ const Login = () => {
     <div className="w-full">
       <div className="md:w-[85%] w-[90%] mx-auto">
         <div>
-          <div className="flex items-center gap-2 w-[5%] pt-3 ">
-            <HiArrowLeft />
-            <span>Login</span>
-          </div>
+          <Link to="/">
+            <div className="flex items-center gap-2 w-[5%] pt-3 ">
+              <HiArrowLeft />
+              <span>Login</span>
+            </div>
+          </Link>
         </div>
         <div className="flex justify-between py-[80px]">
           <div className=" w-6/12">
-            <img src={cta} width={589} height={550} alt="cta-
-            coaching" />
+            <img
+              src={cta}
+              width={589}
+              height={550}
+              alt="cta-
+            coaching"
+            />
           </div>
           <div className=" w-5/12 my-auto">
             <h1 className="text-center">Welcome to Yugoiate</h1>
             <div className="flex justify-center py-3">
-              <div className="border border-[#59bec5] sm:w-[90%] md:w-[80%] lg:w-[60%] xl:w-[60%] rounded-3xl flex justify-between ">
+              <div className="border border-[#59bec5]  rounded-3xl flex justify-between ">
                 <Link to="/registration">
                   <button className="hover:bg-[#59bec5] hover:text-white py-3 sm:px-6 lg:px-8 xl:px-10 rounded-3xl">
                     Login
@@ -33,6 +40,31 @@ const Login = () => {
                   </button>
                 </Link>
               </div>
+              {/* -- */}
+              {/* <div className="border border-[#59bec5] sm:w-[90%] md:w-[80%] lg:w-[60%] xl:w-[60%] rounded-3xl flex justify-between">
+                <Link to="/registration">
+                  <button
+                    className={`hover:bg-[#59bec5] hover:text-white py-3 sm:px-6 lg:px-8 xl:px-10 rounded-3xl ${
+                      window.location.pathname === "/registration"
+                        ? "bg-[#59bec5] text-white"
+                        : ""
+                    }`}
+                  >
+                    Login
+                  </button>
+                </Link>
+                <Link to="/register">
+                  <button
+                    className={`hover:bg-[#59bec5] hover:text-white py-3 sm:px-6 lg:px-8 xl:px-12 rounded-3xl ${
+                      window.location.pathname === "/register"
+                        ? "bg-[#59bec5] text-white"
+                        : ""
+                    }`}
+                  >
+                    Register
+                  </button>
+                </Link>
+              </div> */}
             </div>
 
             <div className="flex flex-col w-[90%] mx-auto pb-7">
