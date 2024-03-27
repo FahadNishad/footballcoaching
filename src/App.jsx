@@ -28,7 +28,7 @@ const App = () => {
         <Route path="/session/:sessionId" element={<SessionPage/>}/>
         <Route path="/blogs" element={<Blogs/>}/>
         <Route path='/coachdetail/:coachId' element={<CoachDetail/>}/>
-        <Route path="/blogdetail" element={<Blogdetail/>}  />
+        <Route path="/blogdetail/:blogId" element={<Blogdetail/>}  />
         
         <Route path="/select" element={<Select/>} />
         <Route path="/verify" element={<Verify/>}  />
