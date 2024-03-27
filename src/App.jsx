@@ -12,6 +12,8 @@ import CoachDetail from "./pages/Session/CoachDetail";
 import Select from './pages/Auth/forgetpassword/Select'
 import Verify from './pages/Auth/forgetpassword/Verify'
 import NewPassword from './pages/Auth/forgetpassword/NewPassword'
+import Blogdetail from "./pages/Blogs/Blogdetail";
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -26,10 +28,13 @@ const App = () => {
         <Route path="/session/:sessionId" element={<SessionPage/>}/>
         <Route path="/blogs" element={<Blogs/>}/>
         <Route path='/coachdetail/:coachId' element={<CoachDetail/>}/>
+        <Route path="/blogdetail" element={<Blogdetail/>}  />
+        
         <Route path="/select" element={<Select/>} />
         <Route path="/verify" element={<Verify/>}  />
         <Route path="/newpassword" element={<NewPassword/>}  />
       </Routes>
+
       <Footer />
     </BrowserRouter>
   );
