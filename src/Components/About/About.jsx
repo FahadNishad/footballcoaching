@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <SectionWrapper justifyContent={"center"} alignItems={"center"} margin={'mt-[6rem]'} width={'85%'}>
-      <div className="w-full flex justify-center items-center gap-5 md:flex-row flex-col">
+      <div className="w-full flex justify-center items-center gap-16 md:flex-row flex-col">
         {/* img div  */}
         <img src={aboutimg} alt="" className="h-[550px] w-[589px]" />
 

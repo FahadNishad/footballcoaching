@@ -22,7 +22,7 @@ export const Services = () => {
       margin={"mt-[6rem]"}
       width={'85%'}
     >
-      <div className="w-full flex items-center justify-center gap-3 md:flex-row flex-col">
+      <div className="w-full pb-[80px] flex items-center justify-center gap-16 md:flex-row flex-col">
         <img src={serviceimg} alt="ourservcies" className="sm:w-[50%] h-[532px] w-full" />
         <div className="sm:w-[50%] flex flex-col gap-1 pt-1 pb-1 w-full">
           <div className="">

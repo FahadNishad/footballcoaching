@@ -23,12 +23,15 @@ const RegistrationPage = () => {
     <div className="w-full">
       <div className="md:w-[85%] w-[90%] mx-auto">
         <div>
+        <Link to='/' >
+
           <div className="flex items-center gap-2 justify-between w-[5%] pt-3 ">
             <span>
               <HiArrowLeft />
             </span>
             <span>Register</span>
           </div>
+        </Link>
         </div>
         <div className="flex justify-between py-[80px]">
           <div className="w-5.5/12">
@@ -37,18 +40,21 @@ const RegistrationPage = () => {
           <div className="w-6/12 ">
             <h1 className="text-center pt-3 ">Registration form</h1>
             <div className="flex justify-center py-3">
-              <div className="border border-[#59bec5]  rounded-3xl flex justify-between md:w-[60%] lg:[80%] xl-[70%] mx-auto  ">
+              <div className="border border-[#59bec5]  rounded-3xl flex justify-between  mx-auto  ">
                 <Link to="/registration">
                   <button className="hover:bg-[#59bec5] hover:text-white py-3 sm:px-6 lg:px-8 xl:px-12 rounded-3xl">
                     Login
                   </button>
                 </Link>
+                <Link to='/register' >
+
                 <button className="hover:bg-[#59bec5] hover:text-white py-3 sm:px-6 lg:px-8 xl:px-12 rounded-3xl">
                   Register
                 </button>
+                </Link>
               </div>
             </div>
-            <p className="py-2 text-center opacity-65 ">
+            <p className="py-2 text-center text-[14px] opacity-65 ">
               Provide the all required information below
             </p>
             <div className="flex flex-col w-10/12 mx-auto py-1">

@@ -13,6 +13,7 @@ import Select from './pages/Auth/forgetpassword/Select'
 import Verify from './pages/Auth/forgetpassword/Verify'
 import NewPassword from './pages/Auth/forgetpassword/NewPassword'
 import Blogdetail from "./pages/Blogs/Blogdetail";
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -33,6 +34,7 @@ const App = () => {
         <Route path="/verify" element={<Verify/>}  />
         <Route path="/newpassword" element={<NewPassword/>}  />
       </Routes>
+
       <Footer />
     </BrowserRouter>
   );
