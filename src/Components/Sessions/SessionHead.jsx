@@ -25,7 +25,7 @@ const SessionHead = () => {
           >
             <img
               src={data.image}
-              width={361}
+              width='100%'
               
               height={212}
               alt="data_image"

@@ -28,7 +28,4 @@ input{
   max-width: 2000px;
   margin: 0 auto;
 }
-.drawer-transition {
-  
-  transition: left 0.3s ease-in-out;
-}
+

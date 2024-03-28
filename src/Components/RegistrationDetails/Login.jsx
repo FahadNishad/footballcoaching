@@ -6,68 +6,45 @@ import { IoEyeOffOutline } from "react-icons/io5";
 const Login = () => {
   return (
     <div className="w-full">
-      <div className="md:w-[85%] w-[90%] mx-auto">
-        <div>
+      <div className="xl:w-[85%] w-[100%] mx-auto">
+        <div className="hidden xl:block" >
           <Link to="/">
-            <div className="flex items-center gap-2 w-[5%] pt-3 ">
+            <div className="flex items-center gap-2 xl:w-[5%] pt-3 ">
               <HiArrowLeft />
               <span>Login</span>
             </div>
           </Link>
         </div>
-        <div className="flex justify-between py-[80px]">
-          <div className=" w-6/12">
+        <div className="flex flex-col   xl:flex-row justify-between xl:py-[80px]">
+          <div className="w-full  xl:w-6/12">
             <img
               src={cta}
-              width={589}
+              width={'100%'}
               height={550}
               alt="cta-
             coaching"
             />
           </div>
-          <div className=" w-5/12 my-auto">
-            <h1 className="text-center">Welcome to Yugoiate</h1>
-            <div className="flex justify-center py-3">
-              <div className="border border-[#59bec5]  rounded-3xl flex justify-between ">
+          <div className="w-full xl:w-5/12 my-auto">
+            <h1 className=" pt-10 xl:pt-10 text-center">Welcome to Yugoiate</h1>
+            {/* --- */}
+            <div className="flex w-[45%]  mx-auto justify-center py-3">
+              <div className="border border-[#59bec5]   rounded-3xl flex justify-between ">
                 <Link to="/registration">
-                  <button className="hover:bg-[#59bec5] hover:text-white py-3 sm:px-6 lg:px-8 xl:px-10 rounded-3xl">
+                  <button className="hover:bg-[#59bec5] hover:text-white py-3 px-6 sm:px-8 md:px-10 xl:px-10 rounded-3xl">
                     Login
                   </button>
                 </Link>
                 <Link to="/register">
-                  <button className="hover:bg-[#59bec5] hover:text-white py-3 sm:px-6 lg:px-8 xl:px-12 rounded-3xl">
+                  <button className="hover:bg-[#59bec5] hover:text-white py-3  px-8 md:px-10 xl:px-12 rounded-3xl">
                     Register
                   </button>
                 </Link>
               </div>
-              {/* -- */}
-              {/* <div className="border border-[#59bec5] sm:w-[90%] md:w-[80%] lg:w-[60%] xl:w-[60%] rounded-3xl flex justify-between">
-                <Link to="/registration">
-                  <button
-                    className={`hover:bg-[#59bec5] hover:text-white py-3 sm:px-6 lg:px-8 xl:px-10 rounded-3xl ${
-                      window.location.pathname === "/registration"
-                        ? "bg-[#59bec5] text-white"
-                        : ""
-                    }`}
-                  >
-                    Login
-                  </button>
-                </Link>
-                <Link to="/register">
-                  <button
-                    className={`hover:bg-[#59bec5] hover:text-white py-3 sm:px-6 lg:px-8 xl:px-12 rounded-3xl ${
-                      window.location.pathname === "/register"
-                        ? "bg-[#59bec5] text-white"
-                        : ""
-                    }`}
-                  >
-                    Register
-                  </button>
-                </Link>
-              </div> */}
+            
             </div>
-
-            <div className="flex flex-col w-[90%] mx-auto pb-7">
+            {/* ---- */}
+            <div className="flex flex-col w-[80%] md:w-[60%] lg:w-[50%] xl:w-[90%] mx-auto pb-7">
               <label htmlFor="name" className="py-1">
                 User name
               </label>
@@ -78,7 +55,8 @@ const Login = () => {
                 required
               />
             </div>
-            <div className="flex flex-col w-[90%] mx-auto pb-5">
+            {/* ---- */}
+            <div className="flex flex-col w-[80%] md:w-[60%] lg:w-[50%] xl:w-[90%] mx-auto pb-5">
               <label htmlFor="password" className="py-1">
                 Password
               </label>
@@ -92,7 +70,8 @@ const Login = () => {
                 <IoEyeOffOutline />
               </div>
             </div>
-            <div className="flex w-[90%] mx-auto justify-between ">
+            {/* ----- */}
+            <div className="flex w-[80%] md:w-[60%] lg:w-[50%] xl:w-[90%] mx-auto justify-between ">
               <div className="flex gap-1  items-center">
                 <input type="checkbox" />
                 <label htmlFor="remember me" className="text-[12px]">
@@ -105,8 +84,8 @@ const Login = () => {
                 </Link>
               </div>
             </div>
-            <div className="text-center pt-10">
-              <button className="border rounded-3xl py-2 w-[90%] mx-auto text-white bg-[#59bec5] ">
+            <div className="text-center pt-2 pb-20 xl:pb-0 xl:pt-10">
+              <button className="border rounded-3xl py-2 w-[80%] md:w-[60%] lg:w-[50%] xl:w-[90%] mx-auto text-white bg-[#59bec5] ">
                 Login
               </button>
             </div>
