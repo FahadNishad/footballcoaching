@@ -19,20 +19,20 @@ export const Services = () => {
     <SectionWrapper
       justifyContent={"center"}
       alignItems={"center"}
-      margin={"mt-[6rem]"}
+      margin={"lg:mt-[6rem]"}
       width={'85%'}
     >
-      <div className="w-full pb-[80px] flex items-center justify-center gap-16 md:flex-row flex-col">
-        <img src={serviceimg} alt="ourservcies" className="sm:w-[50%] h-[532px] w-full" />
-        <div className="sm:w-[50%] flex flex-col gap-1 pt-1 pb-1 w-full">
+      <div className="w-full pb-[40px] lg:pb-[80px] flex flex-wrap items-center justify-center gap-8 lg:gap-16 xl:flex-row xl:flex-nowrap">
+        <img src={serviceimg} alt="ourservcies" className="w-[100%]   xl:h-[550px] xl:w-[589px]" />
+        <div className=" flex flex-col gap-1 pt-1 pb-1 w-full">
           <div className="">
-            <p className="text-main-dark text-[20px] uppercase ">How it Work</p>
-            <h1 className="text-mianheading">Get our Coaching Service</h1>
+            <p className="text-main-dark text-[20px] uppercase text-center lg:text-start ">How it Work</p>
+            <h1 className="text-[24px] lg:text-mianheading">Get our Coaching Service</h1>
             <p className="text-[20px]">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>
           </div>
-          <div className="flex flex-col gap-3 w-full ">
+          <div className="flex pt-7  flex-col gap-3 w-full ">
 
           {servicesData.map((item, index) => (
             <div className="flex justify-center items-start flex-col shadow-inner border w-full " key={index}>

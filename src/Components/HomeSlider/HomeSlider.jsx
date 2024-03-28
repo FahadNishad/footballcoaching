@@ -24,16 +24,16 @@ const HomeSlider = () => {
 
   return (
     <>
-      <div className=" mt-[8rem] w-full flex justify-center items-center flex-col ">
+      <div className=" mt-[1rem] lg:mt-[8rem] w-full flex justify-center items-center flex-col ">
         <div className="flex justify-center items-center ">
           <h1 className="text-secondheading text-main-dark uppercase">
             What you get
           </h1>
         </div>
 
-        <h1 className="text-mianheading ">Our top Resources</h1>
-        <div className="flex justify-end items-center w-[79%]">
-          <div className="flex gap-4 ">
+        <h1 className=" text-[22px] py-4 lg:py-0 lg:text-mianheading ">Our top Resources</h1>
+        <div className="flex justify-end items-center lg:w-[79%]">
+          <div className=" hidden lg:flex gap-4 ">
             <div
               className="bg-[#BEFEFA] p-2 rounded-full flex justify-center items-center"
               onClick={goPrev}
@@ -49,7 +49,7 @@ const HomeSlider = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center flex-col mt-8 mb-4">
+      <div className="flex items-center  justify-center flex-col mt-8 mb-4">
         <Swiper
           ref={swiperRef}
           autoplay={{
@@ -79,7 +79,7 @@ const HomeSlider = () => {
         >
           {sliderData.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="w-[460px] h-[310px] relative">
+              <div className="  lg:w-[460px] h-[310px] relative">
                 <img
                   src={item.img}
                   alt=""
@@ -111,7 +111,7 @@ const HomeSlider = () => {
                   {Array(5)
                     .fill()
                     .map((_, index) => (
-                      <div className="flex flex-row justify-center items-center text-white ">
+                      <div className="flex flex-row justify-center items-center text-white " key={index} >
                         <IoIosStar />
                       </div>
                     ))}

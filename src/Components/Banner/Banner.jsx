@@ -25,11 +25,11 @@ const Banner = () => {
 
       <div className="relative z-20 w-full h-full flex justify-center items-center">
         <div className="flex justify-center items-center flex-col gap-4 ">
-          <p className="uppercase text-white">
+          <p className="uppercase text-white text-[16px]  lg:text-[20px] ">
             Life coaching for high-achievers
           </p>
-          <h1 className="text-4xl font-bold text-white">One-on-one Coaching</h1>
-          <p className="text-white">
+          <h1 className="text-4xl font-bold text-white text-[30px] lg:text-[60px] ">One-on-one Coaching</h1>
+          <p className="text-white text-[14px] text-center lg:text-[20px] ">
             It’s time to enjoy professional success and a fulfilling personal
             life.
           </p>
@@ -42,7 +42,7 @@ const Banner = () => {
               <RiSearchLine className="h-5 w-5 text-gray-500" />
             </div>
             <input
-              className="appearance-none py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-0 w-[400px]"
+              className="appearance-none lg:py-2   lg:px-4 text-gray-700 leading-tight focus:outline-none focus:ring-0 lg:w-[400px]"
               type="text"
               placeholder="Search..."
               value={searchTerm}
