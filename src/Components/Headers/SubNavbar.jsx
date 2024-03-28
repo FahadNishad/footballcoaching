@@ -70,7 +70,7 @@ const SubNavbar = () => {
             className="p-6 bg-black text-white "
           >
             <div className="mb-10  flex items-center justify-between">
-              <Link to={"/"}>
+              <Link onClick={closeDrawer} to={"/"}>
                 <Logo />
               </Link>
               <IconButton
@@ -121,14 +121,14 @@ const SubNavbar = () => {
               >
                 Events
               </Link>
-              <Link to="/registration" className="text-[16px]">
+              <Link onClick={closeDrawer} to="/registration" className="text-[16px]">
                 Login{" "}
               </Link>
 
               <Link
                 onClick={closeDrawer}
                 to="/register"
-                className="bg-main-dark px-4 py-2
+                className="bg-main-dark text-center py-2 mt-6 mr-6
          rounded text-[16px] text-white"
               >
                 Sign Up{" "}
