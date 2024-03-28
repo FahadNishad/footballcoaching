@@ -19,6 +19,7 @@ const App = () => {
     <BrowserRouter>
       <TopNavBar />
       <SubNavbar />
+        
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/registration" element={<Registration />} />
