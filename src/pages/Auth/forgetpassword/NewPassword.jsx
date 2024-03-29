@@ -13,14 +13,14 @@ const NewPassword = () => {
         <div className="w-full">
           <div className="md:w-[85%] w-[90%] mx-auto">
             <div>
-              <div className="flex items-center gap-2 w-[40%] pt-3 ">
+              <div className=" flex items-center gap-2 xl:w-[40%] pb-3 xl:pb-3 pt-3 ">
                 <span>
                   <HiArrowLeft />
                 </span>
                 <span>Forgot Password</span>
               </div>
             </div>
-            <Grid container spacing={6} className="py-[80px]" style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <Grid container spacing={6} className=" pb-30 xl:py-[80px]" style={{ display: 'flex', justifyContent: 'space-between' }}>
             <Grid item md={6} sm={12} xs={12} xl={5} >
             <img src={cta} width="100%" alt="cta coaching" />
           </Grid>
