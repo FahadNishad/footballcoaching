@@ -63,7 +63,7 @@ const RegistrationPage = () => {
                     </button>
                   </Link>
                   <Link to="/register">
-                    <button className="hover:bg-[#59bec5] hover:text-white py-3 sm:px-6 lg:px-8 xl:px-12 rounded-3xl">
+                    <button className="hover:bg-[#59bec5] hover:text-white py-3 sm:px-6 lg:px-8 xl:px-12 rounded-full">
                       Register
                     </button>
                   </Link>
