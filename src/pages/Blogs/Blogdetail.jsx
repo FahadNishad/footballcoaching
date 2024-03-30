@@ -198,3 +198,5 @@ const Blogdetail = () => {
 };
 
 export default Blogdetail;
+
+

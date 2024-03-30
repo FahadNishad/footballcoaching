@@ -32,7 +32,10 @@ const Blogs = () => {
 
         <div className="w-[85%] flex justify-center items-center flex-wrap gap-[3rem] mt-[2.8rem]">
           {blogCardData.map((item, index) => (
+
             <Link to={`/blogdetail/${index}`} key={index} >
+
+        
               <BlogsCard data={item} key={index} />
             </Link>
           ))}
