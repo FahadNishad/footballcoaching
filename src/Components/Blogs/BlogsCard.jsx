@@ -19,13 +19,14 @@ const BlogsCard = ({ data }) => {
       </h1>
       <div className="flex justify-between items-center w-full">
 
-      <p className="text-sm w-[70%] text-[#97989F]">{data.date}</p>
+      <p className="text-sm w-[60%] text-[#97989F]">{data.date}</p>
 
       <Link
-        className="w- text-center text-main-dark border border-main-dark py-[0.4rem] px-2 
+      to='/blogdetail'
+        className="w- text-center text-main-dark border border-main-dark py-[0.4rem] px-1 sm:px-2 
       rounded text-sm hover:bg-main-dark duration-200 hover:text-black"
       >
-        learn more
+        Learn more
       </Link>
       </div>
     </div>

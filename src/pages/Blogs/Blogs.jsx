@@ -32,7 +32,10 @@ const Blogs = () => {
 
         <div className="w-[85%] flex justify-center items-center flex-wrap gap-[3rem] mt-[2.8rem]">
           {blogCardData.map((item, index) => (
-            <Link to={`/blogdetail/${index}`}>
+
+            <Link to={`/blogdetail/${index}`} key={index} >
+
+        
               <BlogsCard data={item} key={index} />
             </Link>
           ))}
@@ -43,7 +46,7 @@ const Blogs = () => {
       <div className="w-full  mt-[1.5rem] flex justify-center mb-5">
         <div className="md:w-[70%]  flex items-center justify-between flex-wrap p-2 w-full">
           {/* right  side  */}
-          <div className="lg:w-[35%] w-full">
+          <div className="  md:w-[70%] xl:w-[35%] px-3 lg:px-0 pb-5 xl:pb-0 w-full">
             <p className="text-[20px] font-semibold text-black">
               Subscribe our Newsletter
             </p>
@@ -53,9 +56,9 @@ const Blogs = () => {
             </p>
           </div>
           {/* left side  */}
-          <div className="lg:w-[60%] flex  items-center w-full">
+          <div className="lg:w-[80%] lg:gap-8 xl:gap-0  flex flex-col lg:flex-row  items-center w-full">
             {/* input  */}
-            <div className="w-[70%] relative ">
+            <div className=" w-full  xl:w-[70%] relative ">
               <input
                 type="text"
                 placeholder="Your email address"
@@ -66,7 +69,7 @@ const Blogs = () => {
               </div>
             </div>
             {/* iocn  */}
-            <div className="w-[30%] flex justify-center items-center gap-4">
+            <div className="w-full lg:w-[30%] pt-5 lg:pt-0 flex justify-center items-center gap-4">
               <div className="text-white bg-main-dark p-2 rounded-full">
                 <FaFacebookF />
               </div>

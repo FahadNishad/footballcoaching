@@ -46,28 +46,28 @@ const Verify = () => {
 
   return (
     <div className="w-full">
-      <div className="md:w-[85%] w-[90%] mx-auto">
+      <div className="xl:w-[85%] w-[100%]  xl:mx-auto">
         <div>
-          <div className="flex items-center gap-2 w-[5%] pt-3 ">
+          <div className=" hidden xl:flex items-center gap-2 w-[5%] pt-3 ">
             <span>
               <HiArrowLeft />
             </span>
             <span>Verification</span>
           </div>
         </div>
-        <div className="flex py-[80px]">
-          <div className="w-[50%]">
-            <img src={cta} width={589} height={550} alt="cta coaching" />
+        <div className="flex flex-col xl:flex-row xl:py-[80px]">
+          <div className="xl:w-[50%]">
+            <img src={cta} width={'100%'} height={550} alt="cta coaching" />
           </div>
-          <div className="px-20 md:py-20 xl:py-48 gap-2 flex flex-col ">
-            <h1 className="text-center text-[32px] font-bold">
+          <div className="md:px-20 py-10 md:py-20 xl:py-48 gap-2 flex flex-col ">
+            <h1 className="text-center text-[24px] md:text-[32px] font-bold">
               Verification code
             </h1>
             <p className="flex justify-center text-center text-[#535763] text-[14px]">
               We just sent you a verification code. Check your <br /> inbox to
               get it.
             </p>
-            <div className="flex w-full pt-3 justify-between ">
+            <div className="flex  pt-3 mx-auto gap-5 md:gap-0 md:justify-between ">
               {[0, 1, 2, 3].map((index) => (
                 <input
                   type="text"
@@ -93,7 +93,7 @@ const Verify = () => {
             <p className="text-center">
               Re-send code in <span className="text-[#6759ff]">0:20</span>{" "}
             </p>
-            <Link to='/newpassword' className="bg-[#efefef] hover:bg-gray-300 px-[105px] text-[15px] font-semibold py-2 rounded-xl">
+            <Link to='/newpassword' className="bg-[#efefef] hover:bg-gray-300 w-[70%] sm:w-[55%] md:w-[45%] lg:w-[35%] mx-auto text-center md:px-[105px] xl:w-full  text-[15px] font-semibold py-2 rounded-xl">
               Continue
             </Link>
           </div>
