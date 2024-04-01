@@ -16,13 +16,13 @@ const Blogs = () => {
       <SectionWrapper
         justifyContent={"center"}
         alignItems={"center"}
-        margin={"mt-[4rem]"}
+        margin={"lg:mt-[4rem]"}
         direction={"col"}
         gap={"gap-3"}
       >
         {/* Header */}
         <div className="relative">
-          <img src={sessionhead} alt="headerimage" className="" />
+          <img src={sessionhead}  alt="headerimage" className="" />
           <p className="absolute bottom-0 left-11 text-white text-mianheading font-bold">
             Blogs
           </p>
@@ -30,7 +30,7 @@ const Blogs = () => {
 
         {/* blog card  */}
 
-        <div className="w-[85%] flex justify-center items-center flex-wrap gap-[3rem] mt-[2.8rem]">
+        <div className=" w-[90%] sm:w-[70%] md:w-[100%] lg:w-[100%] flex justify-center items-center flex-wrap gap-[3rem] mt-[2.8rem]">
           {blogCardData.map((item, index) => (
             <Link to={`/blogdetail/${index}`} key={index} >
               <BlogsCard data={item} key={index} />
