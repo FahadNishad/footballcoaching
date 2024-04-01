@@ -2,13 +2,18 @@ import React from "react";
 import headerimg from "../../assets/images/blogdetail.png";
 import banner from "../../assets/images/blog_banner.png";
 import { commentsData } from "../../data/comments";
-import { FaFacebookF, FaInstagram, FaPinterestP, FaTwitter } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaPinterestP,
+  FaTwitter,
+} from "react-icons/fa";
 
 const Blogdetail = () => {
   return (
     <>
       {/* main wrapper */}
-      <div className="flex px-2 lg:px-0 items-center justify-center lg:mt-[2rem]">
+      <div className="flex  items-center justify-center lg:mt-[2rem]">
         <div className="w-[100%] lg:w-[73%]">
           {/* header section */}
           <div className="relative">
@@ -16,23 +21,32 @@ const Blogdetail = () => {
             <img src={headerimg} className="w-full" alt="img" />
 
             {/* card  */}
-            <div className="flex flex-col gap-6 absolute top-[100px] lg:bottom-[-45px] bg-white p-3 lg:w-[450px] lg:p-6 rounded-lg lg:left-14 shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]">
-              <div className="bg-[#3C9FA0] px-1 py-[2px] w-[20%] rounded flex justify-center items-center">
+            <div className="flex w-[95%] md:w-[50%] md:left-10 md:top-[270px]  mx-2 lg:mx-0 flex-col gap-3 lg:gap-6 absolute top-[100px] lg:top-[290px] bg-white p-3 lg:w-[450px] lg:p-6 rounded-lg lg:left-14 shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]">
+              <div className="bg-[#3C9FA0] px-1 py-[2px] w-[30%] lg:w-[20%] rounded flex justify-center items-center">
                 <p className="text-[12px] text-white">Technology</p>
               </div>
               <p className="text-black lg:text-[26px] font-bold leading-8">
-                The Impact of Technology on the <span className="md:hidden"> <br /> </span> Football Game will bring <span className="md:hidden"> <br /> </span> some
+                The Impact of Technology on the{" "}
+                <span className="md:hidden">
+                  {" "}
+                  <br />{" "}
+                </span>{" "}
+                Football Game will bring some{" "}
+                <span className="md:hidden">
+                  {" "}
+                  <br />{" "}
+                </span>
                 change.
               </p>
               <p className="text-[12px] text-[#97989F]">August 20, 2022</p>
             </div>
           </div>
           {/* banner section */}
-          <div className="w-full mt-28 flex justify-center items-center">
+          <div className="w-full mt-[130px] md:mt-[80px] lg:mt-[230px] xl:mt-28 flex justify-center items-center">
             <img src={banner} alt="banner not available" className="w-[70%]" />
           </div>
           {/* paragrapghs section */}
-          <div className="flex justify-center items-center w-full flex-col gap-5 mt-16">
+          <div className="flex justify-center items-center w-full flex-col gap-5 mt-4 lg:mt-16">
             <div>
               <p>
                 Traveling is an enriching experience that opens up new horizons,

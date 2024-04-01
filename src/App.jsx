@@ -20,8 +20,7 @@ const App = () => {
     <BrowserRouter>
       <TopNavBar />
       <SubNavbar />
-        
-      <Routes>
+        <div className="testing" >      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/register" element={<Register />} />
@@ -35,6 +34,7 @@ const App = () => {
         <Route path="/verify" element={<Verify/>}  />
         <Route path="/newpassword" element={<NewPassword/>}  />
       </Routes>
+</div>
 
       <Footer />
     </BrowserRouter>
